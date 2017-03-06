@@ -71,7 +71,7 @@
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-03-01 21:46:14</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6dbdf0b067113200dee25bb557415ac3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Andrew Jackson</sys_name>
