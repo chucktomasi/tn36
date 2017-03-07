@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Issue" max_length="40" name="x_tn36_issue" type="collection">
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Inspector" max_length="32" name="inspector" reference="sys_user" type="reference"/>
+    </element>
+</database>

@@ -13,30 +13,31 @@ UserUtil.prototype = {
     },
 	
 	/*
-	 * get an array of sys_ids for users where the founder field is true
+	 * get an array of sys_ids for users in the specified group
 	 *
 	 */
-	getFounderIDs : function() {
+	getGroupMembers : function(groupName) {
 		
 		var answer = [];
-		var u = new GlideRecord('sys_user');
-		u.addQuery('x_tn36_sn_founder', true);
+		var u = new GlideRecord('sys_user_grmember');
+		u.addQuery('group.name', groupName);
+		u.addQuery('user.active', true);
 		u.query();
 		
 		while (u.next()) {
-			answer.push(u.getValue('sys_id'));
+			answer.push(u.getValue('user'));
 		}
 		
 		return answer;
 	},
 	
 	/*
-	 * get the list of founders and create an encoded query string
+	 * generate the encoded query string for the group name
 	 *
 	 */
-	getFounderRefQual : function () {
+	getGroupRefQual : function (groupName) {
 		
-		var list = this.getFounderIDs();
+		var list = this.getGroupMembers(groupName);
 		
 		return 'sys_idIN' + list.join(',');
 	},
@@ -48,7 +49,7 @@ UserUtil.prototype = {
         <sys_created_on>2017-03-01 22:21:30</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>fa95053467113200dee25bb557415a72</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>UserUtil</sys_name>
         <sys_package display_value="tn36" source="x_tn36">ac5bb43067113200dee25bb557415aa3</sys_package>
         <sys_policy>read</sys_policy>
@@ -56,6 +57,6 @@ UserUtil.prototype = {
         <sys_scope display_value="tn36">ac5bb43067113200dee25bb557415aa3</sys_scope>
         <sys_update_name>sys_script_include_fa95053467113200dee25bb557415a72</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-03-06 15:11:32</sys_updated_on>
+        <sys_updated_on>2017-03-06 15:45:43</sys_updated_on>
     </sys_script_include>
 </record_update>

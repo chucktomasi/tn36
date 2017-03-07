@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_number">
     <sys_number action="INSERT_OR_UPDATE">
-        <category display_value="" name="x_tn36_safety_issue">x_tn36_safety_issue</category>
+        <category display_value="" name="x_tn36_issue">x_tn36_issue</category>
         <maximum_digits>7</maximum_digits>
         <number>1000</number>
-        <prefix>ISS</prefix>
+        <prefix>SAFT</prefix>
         <sys_class_name>sys_number</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-03-01 21:41:48</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>e0bc787067113200dee25bb557415ae0</sys_id>
+        <sys_created_on>2017-03-07 14:32:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d50492ea0f1132007500cbdce1050e6b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>ISS</sys_name>
+        <sys_name>SAFT</sys_name>
         <sys_package display_value="tn36" source="x_tn36">ac5bb43067113200dee25bb557415aa3</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="tn36">ac5bb43067113200dee25bb557415aa3</sys_scope>
-        <sys_update_name>sys_number_e0bc787067113200dee25bb557415ae0</sys_update_name>
+        <sys_update_name>sys_number_d50492ea0f1132007500cbdce1050e6b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-03-01 21:41:48</sys_updated_on>
+        <sys_updated_on>2017-03-07 14:32:41</sys_updated_on>
     </sys_number>
 </record_update>
